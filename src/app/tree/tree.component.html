@@ -1,0 +1,30 @@
+<!--<div class="data" *ngFor="let inst_hist of Data | async">
+    <span>{{ inst_hist.configStatus }}</span>
+</div>--> 
+
+<h2>
+    Tree view
+</h2>
+
+ <clr-tree>
+    <clr-tree-node [clrExpanded]="true">
+        configStatus
+        <clr-tree-node [clrExpanded]="true">
+            Some Data
+
+            <clr-tree-node>More data</clr-tree-node>
+
+            <clr-tree-node>
+                I have tried to work with json file, 
+            </clr-tree-node>
+
+            <clr-tree-node>
+                but I can't found out how to
+                <clr-tree-node> make a tree out of it =(</clr-tree-node>
+            </clr-tree-node>
+        </clr-tree-node>
+    </clr-tree-node>
+</clr-tree>
+
+
+    

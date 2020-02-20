@@ -1,0 +1,19 @@
+<h2>
+    Data grid
+</h2>
+
+<clr-datagrid>
+    <clr-dg-column>configStatus</clr-dg-column>
+    <clr-dg-column>Date</clr-dg-column>
+    <clr-dg-column>configName</clr-dg-column>
+    <clr-dg-column>installMethod</clr-dg-column>
+    <clr-dg-column>installId</clr-dg-column>
+
+    <clr-dg-row *ngFor="let inst_hist of Data | async">
+    <clr-dg-cell>{{ inst_hist.configStatus }}</clr-dg-cell>
+    <clr-dg-cell>{{ inst_hist.date }}</clr-dg-cell>
+    <clr-dg-cell>{{ inst_hist.configName }}</clr-dg-cell>
+    <clr-dg-cell>{{ inst_hist.installMethod }}</clr-dg-cell>
+    <clr-dg-cell>{{ inst_hist.installId }}</clr-dg-cell>
+    </clr-dg-row>
+</clr-datagrid>
